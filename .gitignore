@@ -10,3 +10,7 @@ Library/
 Logs/
 
 Temp/
+
+obj/Debug/
+
+.vs/simulation-2-ar/v16/Server/sqlite3/
