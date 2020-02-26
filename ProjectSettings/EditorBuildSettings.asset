@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tomas/GPSTomasTest.unity
+    guid: 16a0fe538a38c8d45ad927693c2a0f9a
   m_configObjects: {}
