@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 //using UnityEngine.Experimental.XR;
 
 
 public class ARPlaceObject : MonoBehaviour
 {
+    public GameObject[] objectList;
     public GameObject objectToPlace;
     public GameObject placementIndicator;
     private ARSessionOrigin arOrigin;
@@ -57,5 +59,10 @@ public class ARPlaceObject : MonoBehaviour
             var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
             placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
+    }
+
+    public void OnSelectionChange(Dropdown dropdown)
+    {
+        objectToPlace = objectList[dropdown.value];
     }
 }
